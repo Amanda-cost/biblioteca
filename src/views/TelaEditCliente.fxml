@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="640.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerEditCliente">
+
+   <children>
+
+      <!-- Avatar no topo -->
+      <Circle fill="#d9d9d9" layoutX="45.0" layoutY="45.0" radius="28.0" />
+
+      <!-- Título superior -->
+      <Text layoutX="90.0" layoutY="60.0" text="Editar Cliente">
+         <font><Font name="Bauhaus 93" size="28.0" /></font>
+      </Text>
+
+      <!-- Campo Id -->
+      <TextField fx:id="txtId" editable="false" layoutX="292.0" layoutY="120.0" prefHeight="43.0" prefWidth="200.0" style="-fx-background-radius: 9; -fx-border-color: #000; -fx-border-radius: 9; -fx-background-color: #F5F5F5;" />
+      <Pane layoutX="310.0" layoutY="106.0" prefHeight="27.0" prefWidth="40.0" style="-fx-background-color: #F5F5F5;">
+         <children>
+            <Text layoutX="7.0" layoutY="20.0" text="Id">
+               <font><Font name="Bauhaus 93" size="16.0" /></font>
+            </Text>
+         </children>
+      </Pane>
+
+      <!-- Linha separadora -->
+      <Line endX="600.0" layoutX="280.0" layoutY="180.0" stroke="#cccaca" />
+
+      <!-- Campo Nome -->
+      <TextField fx:id="txtNome" layoutX="292.0" layoutY="220.0" prefHeight="43.0" prefWidth="307.0" style="-fx-background-radius: 9; -fx-border-color: #000; -fx-border-radius: 9; -fx-background-color: #F5F5F5;" />
+      <Pane layoutX="310.0" layoutY="206.0" prefHeight="27.0" prefWidth="80.0" style="-fx-background-color: #F5F5F5;">
+         <children>
+            <Text layoutX="7.0" layoutY="20.0" text="Nome">
+               <font><Font name="Bauhaus 93" size="16.0" /></font>
+            </Text>
+         </children>
+      </Pane>
+
+      <!-- Campo CPF -->
+      <TextField fx:id="txtCpf" layoutX="620.0" layoutY="220.0" prefHeight="43.0" prefWidth="207.0" style="-fx-background-radius: 9; -fx-border-color: #000; -fx-border-radius: 9; -fx-background-color: #F5F5F5;" />
+      <Pane layoutX="640.0" layoutY="206.0" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #F5F5F5;">
+         <children>
+            <Text layoutX="7.0" layoutY="20.0" text="CPF">
+               <font><Font name="Bauhaus 93" size="16.0" /></font>
+            </Text>
+         </children>
+      </Pane>
+
+      <!-- Campo Endereço -->
+      <TextField fx:id="txtIdade" layoutX="292.0" layoutY="290.0" prefHeight="43.0" prefWidth="307.0" style="-fx-background-radius: 9; -fx-border-color: #000; -fx-border-radius: 9; -fx-background-color: #F5F5F5;" />
+      <Pane layoutX="310.0" layoutY="276.0" prefHeight="27.0" prefWidth="100.0" style="-fx-background-color: #F5F5F5;">
+         <children>
+            <Text layoutX="7.0" layoutY="20.0" text="Idade">
+               <font><Font name="Bauhaus 93" size="16.0" /></font>
+            </Text>
+         </children>
+      </Pane>
+
+      <!-- Campo Telefone -->
+      <TextField fx:id="txtTelefone" layoutX="620.0" layoutY="290.0" prefHeight="43.0" prefWidth="207.0" style="-fx-background-radius: 9; -fx-border-color: #000; -fx-border-radius: 9; -fx-background-color: #F5F5F5;" />
+      <Pane layoutX="640.0" layoutY="276.0" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: #F5F5F5;">
+         <children>
+            <Text layoutX="7.0" layoutY="20.0" text="Telefone">
+               <font><Font name="Bauhaus 93" size="16.0" /></font>
+            </Text>
+         </children>
+      </Pane>
+
+      <!-- Campo Email -->
+      <TextField fx:id="txtTurma" layoutX="292.0" layoutY="360.0" prefHeight="43.0" prefWidth="435.0" style="-fx-background-radius: 9; -fx-border-color: #000; -fx-border-radius: 9; -fx-background-color: #F5F5F5;" />
+      <Pane layoutX="310.0" layoutY="346.0" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #F5F5F5;">
+         <children>
+            <Text layoutX="7.0" layoutY="20.0" text="Turma">
+               <font><Font name="Bauhaus 93" size="16.0" /></font>
+            </Text>
+         </children>
+      </Pane>
+
+      <!-- Botões Editar e Cancelar -->
+      <Button fx:id="btEditar" layoutX="820.0" layoutY="500.0" mnemonicParsing="false" onAction="#actionEdit" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #656DF9; -fx-background-radius: 9;" text="Editar" textFill="WHITE">
+         <font><Font name="Bauhaus 93" size="16.0" /></font>
+      </Button>
+
+      <Button fx:id="btCancelar" layoutX="720.0" layoutY="500.0" mnemonicParsing="false" onAction="#actionCancel" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #FF6B4A; -fx-background-radius: 9;" text="Cancelar" textFill="WHITE">
+         <font><Font name="Bauhaus 93" size="16.0" /></font>
+      </Button>
+
+      <!-- Menu lateral -->
+      <Circle fill="#656DF9" layoutX="65.0" layoutY="225.0" radius="14.0" />
+      <Text fill="WHITE" layoutX="58.0" layoutY="232.0" text="✓">
+         <font><Font name="Bauhaus 93" size="16.0" /></font>
+      </Text>
+      <Text layoutX="90.0" layoutY="234.0" style="-fx-font-weight: bold;" text="Editar Cliente">
+         <font><Font name="Bauhaus 93" size="17.0" /></font>
+      </Text>
+
+   </children>
+
+</AnchorPane>

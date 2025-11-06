@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="640.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerEditEmprestimos">
+
+   <children>
+
+      <!-- Avatar cinza no topo -->
+      <Circle fill="#d9d9d9" layoutX="45.0" layoutY="45.0" radius="28.0" />
+      <Text layoutX="34.0" layoutY="52.0" style="-fx-font-size: 20;" text="👤" />
+
+      <!-- Título superior -->
+      <Text layoutX="90.0" layoutY="60.0" text="Editar Empréstimo">
+         <font>
+            <Font name="Bauhaus 93" size="28.0" />
+         </font>
+      </Text>
+
+      <!-- Campo Nome do Cliente -->
+      <TextField fx:id="txtNomeCliente" layoutX="520.0" layoutY="140.0" prefHeight="43.0" prefWidth="307.0" style="-fx-background-radius: 9; -fx-border-color: #000; -fx-border-radius: 9; -fx-background-color: #F5F5F5;" />
+      <Pane layoutX="540.0" layoutY="126.0" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #F5F5F5;">
+         <children>
+            <Text layoutX="7.0" layoutY="20.0" text="Nome do Cliente">
+               <font><Font name="Bauhaus 93" size="16.0" /></font>
+            </Text>
+         </children>
+      </Pane>
+
+      <!-- Campo Turma -->
+      <TextField fx:id="txtTurma" layoutX="292.0" layoutY="210.0" prefHeight="43.0" prefWidth="535.0" style="-fx-background-radius: 9; -fx-border-color: #000; -fx-border-radius: 9; -fx-background-color: #F5F5F5;" />
+      <Pane layoutX="310.0" layoutY="196.0" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #F5F5F5;">
+         <children>
+            <Text layoutX="7.0" layoutY="20.0" text="Turma">
+               <font><Font name="Bauhaus 93" size="16.0" /></font>
+            </Text>
+         </children>
+      </Pane>
+
+      <!-- Linha separadora -->
+      <Line endX="600.0" layoutX="280.0" layoutY="280.0" stroke="#cccaca" />
+
+      <!-- Campo Devolvido -->
+      <ComboBox fx:id="cbDevolvido" layoutX="292.0" layoutY="320.0" prefHeight="43.0" prefWidth="200.0" style="-fx-background-radius: 9; -fx-border-color: #000; -fx-border-radius: 9; -fx-background-color: #F5F5F5;" />
+      <Pane layoutX="310.0" layoutY="306.0" prefHeight="27.0" prefWidth="90.0" style="-fx-background-color: #F5F5F5;">
+         <children>
+            <Text layoutX="7.0" layoutY="20.0" text="Devolvido">
+               <font><Font name="Bauhaus 93" size="16.0" /></font>
+            </Text>
+         </children>
+      </Pane>
+
+      <!-- Campo Título do Livro -->
+      <TextField fx:id="txtTituloLivro" layoutX="520.0" layoutY="320.0" prefHeight="43.0" prefWidth="307.0" style="-fx-background-radius: 9; -fx-border-color: #000; -fx-border-radius: 9; -fx-background-color: #F5F5F5;" />
+      <Pane layoutX="540.0" layoutY="306.0" prefHeight="27.0" prefWidth="120.0" style="-fx-background-color: #F5F5F5;">
+         <children>
+            <Text layoutX="7.0" layoutY="20.0" text="Título do Livro">
+               <font><Font name="Bauhaus 93" size="16.0" /></font>
+            </Text>
+         </children>
+      </Pane>
+
+      <!-- Campo Data Empréstimo -->
+      <TextField fx:id="txtDataEmprestimo" layoutX="292.0" layoutY="400.0" prefHeight="43.0" prefWidth="200.0" style="-fx-background-radius: 9; -fx-border-color: #000; -fx-border-radius: 9; -fx-background-color: #F5F5F5;" />
+      <Pane layoutX="310.0" layoutY="386.0" prefHeight="27.0" prefWidth="130.0" style="-fx-background-color: #F5F5F5;">
+         <children>
+            <Text layoutX="7.0" layoutY="20.0" text="Data Empréstimo">
+               <font><Font name="Bauhaus 93" size="16.0" /></font>
+            </Text>
+         </children>
+      </Pane>
+
+      <!-- Campo Data Devolução -->
+      <TextField fx:id="txtDataDevolucao" layoutX="520.0" layoutY="400.0" prefHeight="43.0" prefWidth="307.0" style="-fx-background-radius: 9; -fx-border-color: #000; -fx-border-radius: 9; -fx-background-color: #F5F5F5;" />
+      <Pane layoutX="540.0" layoutY="386.0" prefHeight="27.0" prefWidth="140.0" style="-fx-background-color: #F5F5F5;">
+         <children>
+            <Text layoutX="1.0" layoutY="20.0" text="Data da Devolução">
+               <font><Font name="Bauhaus 93" size="16.0" /></font>
+            </Text>
+         </children>
+      </Pane>
+
+      <!-- Menu lateral -->
+      <Circle fill="#656DF9" layoutX="65.0" layoutY="225.0" radius="14.0" />
+      <Text fill="WHITE" layoutX="58.0" layoutY="232.0" text="✓">
+         <font><Font size="16.0" /></font>
+      </Text>
+      <Text layoutX="90.0" layoutY="234.0" style="-fx-font-weight: bold;" text="Editar Empréstimo">
+         <font><Font name="Bauhaus 93" size="17.0" /></font>
+      </Text>
+      <Button fx:id="btCancelar" layoutX="720.0" layoutY="500.0" onAction="#ActionCancel" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #FF7250; -fx-background-radius: 9;" text="Cancelar" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btAdicionar" layoutX="820.0" layoutY="500.0" onAction="#ActionAdd" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #656DF9; -fx-background-radius: 9;" text="Adicionar" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtdCliente" editable="false" layoutX="343.0" layoutY="140.0" prefHeight="43.0" prefWidth="97.0" style="-fx-background-radius: 9; -fx-border-color: #000; -fx-border-radius: 9; -fx-background-color: #F5F5F5;" />
+      <Text layoutX="308.0" layoutY="132.0" text="ID do cliente">
+         <font>
+            <Font name="Bauhaus 93" size="16.0" />
+         </font>
+      </Text>
+
+   </children>
+
+</AnchorPane>
